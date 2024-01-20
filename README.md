@@ -18,11 +18,7 @@ This Python script generates QR codes using the `qrcode` library. The script pro
 - [qrcode](https://pypi.org/project/qrcode/)
 - [uuid](https://docs.python.org/3/library/uuid.html)
 
-### How to Run
-
-```bash
-python py_qrcode.py
-```
+Or install using pip install {insert_name}
 
 ## py_weather.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_weather.py)
 
@@ -38,7 +34,7 @@ This script uses the **requests** library to fetch current weather information f
 - Visibility (e.g., 10 km)
 - Precipitation (e.g., 0.0 mm)
 
-### Requirements
+### Dependencies
 
-1. Python 3.x
-2. requests library (install it using pip install requests)
+- Python 3.x
+- Requests library [requests](https://pypi.org/project/requests/) or (install it using pip install requests)
