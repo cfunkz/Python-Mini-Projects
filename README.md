@@ -18,7 +18,7 @@ This Python script generates QR codes using the `qrcode` library. The script pro
 - [qrcode](https://pypi.org/project/qrcode/)
 - [uuid](https://docs.python.org/3/library/uuid.html)
 
-Or install using pip install {insert_name}
+Or install using **pip install {insert_name}**
 
 ## py_weather.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_weather.py)
 
