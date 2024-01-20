@@ -15,6 +15,7 @@ This Python script generates QR codes using the `qrcode` library. The script pro
 
 ### Dependencies
 
+- Python 3.x
 - [qrcode](https://pypi.org/project/qrcode/)
 - [uuid](https://docs.python.org/3/library/uuid.html)
 
