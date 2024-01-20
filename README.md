@@ -13,7 +13,7 @@ This Python script (`py_qrcode.py`) generates QR codes using the `qrcode` librar
 3. The script will generate a QR code and save it as a PNG image with a unique name.
 4. Optionally, you can choose to generate another QR code by entering 'Y' when prompted.
 
-### Dependencies [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_weather.py)
+### Dependencies
 
 - [qrcode](https://pypi.org/project/qrcode/)
 - [uuid](https://docs.python.org/3/library/uuid.html)
@@ -24,7 +24,7 @@ This Python script (`py_qrcode.py`) generates QR codes using the `qrcode` librar
 python py_qrcode.py
 ```
 
-## py_weather.py
+## py_weather.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_weather.py)
 
 ### Description
 
