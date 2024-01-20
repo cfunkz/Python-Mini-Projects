@@ -48,10 +48,10 @@ A basic inventory management system coded in Python. The script allows users to 
 
 ### Features
 
-- **Add Item:** Add a new item to the inventory by providing the name, barcode, and quantity.
-- **Update Item:** Update the quantity of an existing item in the inventory.
-- **Remove Item:** Remove an item from the inventory or decrease its quantity.
-- **Find Item:** Search for an item in the inventory using its name or barcode.
+- **Add Item:** Add a new item to the inventory by providing the name, barcode, and quantity `add_item("name", "barcode", quantity)`.
+- **Update Item:** Update the quantity of an existing item in the inventory. `update_item("barcode or name", quantity)`.
+- **Remove Item:** Remove an item from the inventory or decrease its quantity. `remove_item("barcode or name", quantity)`.
+- **Find Item:** Search for an item in the inventory using its name or barcode. `find_item("item name or barcode")`.
 
 ### Usage
 
