@@ -37,4 +37,4 @@ This script uses the **requests** library to fetch current weather information f
 ### Dependencies
 
 - Python 3.x
-- Requests library [requests](https://pypi.org/project/requests/) or (install it using pip install requests)
+- [requests](https://pypi.org/project/requests/)
