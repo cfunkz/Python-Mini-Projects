@@ -22,3 +22,23 @@ This Python script (`py_qrcode.py`) generates QR codes using the `qrcode` librar
 
 ```bash
 python py_qrcode.py
+```
+
+## py_weather.py
+
+### Description
+
+This script uses the **requests** library to fetch current weather information from the **wttr.in API**. It prompts to input a location, and then retrieves and displays the weather details using the "F2" view option.
+
+### Information Displayed
+
+-Current condition (e.g., Overcast)
+-Temperature (e.g., -2°C)
+-Wind speed and direction (e.g., 6 km/h ←)
+-Visibility (e.g., 10 km)
+-Precipitation (e.g., 0.0 mm)
+
+### Requirements
+
+1. Python 3.x
+2. requests library (install it using pip install requests)
