@@ -84,7 +84,7 @@ def main():
             ## 1. Add Item    ##
             ## 2. Update      ##
             ## 3. Find Item   ##
-            ## 4. View Items   ##
+            ## 4. View Items  ##
             ## 5. Exit        ##
             ####################
               """)
