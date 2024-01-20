@@ -61,3 +61,4 @@ A basic inventory management system coded in Python. The script allows users to 
 ### Dependencies
 
 - Python 3.x
+- [uuid](https://docs.python.org/3/library/uuid.html)
