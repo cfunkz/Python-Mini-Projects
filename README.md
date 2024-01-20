@@ -1,6 +1,6 @@
 # Python-Mini-Projects
 
-## py_qrcode.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_qrcode.py)
+## QR Code Generator py_qrcode.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_qrcode.py)
 
 ### Description
 
@@ -21,7 +21,7 @@ This Python script generates QR codes using the `qrcode` library. The script pro
 
 Or install using ```pip install {insert_name}```
 
-## py_weather.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_weather.py)
+## Weather API Call py_weather.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_weather.py)
 
 ### Description
 
@@ -40,7 +40,7 @@ This script uses the **requests** library to fetch current weather information f
 - Python 3.x
 - [requests](https://pypi.org/project/requests/)
 
-## inventory_management.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/inventory_management.py)
+## Inventory Management inventory_management.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/inventory_management.py)
 
 ### Description
 
