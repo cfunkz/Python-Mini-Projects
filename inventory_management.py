@@ -49,11 +49,13 @@ def find_item(input_value):
 def main():
     while True:
         print("""
-              1. Add Item
-              2. Update
-              3. Remove Item
-              4. Find Item
-              5. Exit
+            ####################
+            ## 1. Add Item    ##
+            ## 2. Update      ##
+            ## 3. Remove Item ##
+            ## 4. Find Item   ##
+            ## 5. Exit        ##
+            ####################
               """)
 
         choice = input("Type an option from above: ")
