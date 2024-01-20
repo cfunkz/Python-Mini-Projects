@@ -73,7 +73,7 @@ def view_items():
         barcode = details["barcode"]
         quantity = details["quantity"]
         print(f"{name} | {barcode} | {quantity}")
-
+    print("-"*25)
 
 def main():
     while True:
