@@ -39,3 +39,25 @@ This script uses the **requests** library to fetch current weather information f
 
 - Python 3.x
 - [requests](https://pypi.org/project/requests/)
+
+## inventory_management.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/inventory_management.py)
+
+### Description
+
+A basic inventory management system coded in Python. The script allows users to add, update, remove, and find items in the inventory.
+
+## Features
+
+- **Add Item:** Add a new item to the inventory by providing the name, barcode, and quantity.
+- **Update Item:** Update the quantity of an existing item in the inventory.
+- **Remove Item:** Remove an item from the inventory or decrease its quantity.
+- **Find Item:** Search for an item in the inventory using its name or barcode.
+
+### Usage
+
+1. Run the script.
+2. Select an option from the displayed options.
+
+### Dependencies
+
+- Python 3.x
