@@ -53,7 +53,7 @@ def main():
 
         choice = input("Type an option from above: ")
 
-        if choice not in ['1', '2', '3', '4', '5']:
+        if choice not in ["1", "2", "3", "4", "5"]:
             print("Error: Invalid choice.")
         else:
             choice = int(choice)
