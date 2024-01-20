@@ -67,13 +67,12 @@ def find_item(input_value):
 
 
 def view_items():
-    print("Name\t\t| Barcode\t| Quantity")
-    print("="*40)
+    print("\nName\t\t| Barcode\t| Quantity")
+    print("#"*40)
     for name, details in items.items():
         barcode = details["barcode"]
         quantity = details["quantity"]
-        print(f"{name}\t\t| {barcode}\t| {quantity}")
-    print("="*40)
+        print(f"{name}\t\t| {barcode}\t| {quantity}\n")
 
 
 def main():
