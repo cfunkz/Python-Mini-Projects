@@ -46,7 +46,7 @@ This script uses the **requests** library to fetch current weather information f
 
 A basic inventory management system coded in Python. The script allows users to add, update, remove, and find items in the inventory.
 
-## Features
+### Features
 
 - **Add Item:** Add a new item to the inventory by providing the name, barcode, and quantity.
 - **Update Item:** Update the quantity of an existing item in the inventory.
