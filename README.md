@@ -19,7 +19,7 @@ This Python script generates QR codes using the `qrcode` library. The script pro
 - [qrcode](https://pypi.org/project/qrcode/)
 - [uuid](https://docs.python.org/3/library/uuid.html)
 
-Or install using ```pip install {insert_name}```
+Or install using ```pip install qrcode, uuid```
 
 ## Weather API Call py_weather.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_weather.py)
 
@@ -39,6 +39,8 @@ This script uses the **requests** library to fetch current weather information f
 
 - Python 3.x
 - [requests](https://pypi.org/project/requests/)
+
+Or install using ```pip install requests```
 
 ## Inventory Management inventory_management.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/inventory_management.py)
 
@@ -62,3 +64,5 @@ A basic inventory management system coded in Python. The script allows users to 
 
 - Python 3.x
 - [uuid](https://docs.python.org/3/library/uuid.html)
+
+Or install using ```pip install uuid```
