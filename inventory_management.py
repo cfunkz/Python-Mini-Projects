@@ -80,16 +80,16 @@ def main():
     while True:
         print("Current Items: ", len(items))
         print("""
-            ####################
-            ## 1. Add Item    ##
-            ## 2. Update      ##
-            ## 3. Find Item   ##
-            ## 4. View Items  ##
-            ## 5. Exit        ##
-            ####################
+            ###################
+            ## 1. Add Item   ##
+            ## 2. Update     ##
+            ## 3. Find Item  ##
+            ## 4. View Items ##
+            ## 5. Exit       ##
+            ###################
               """)
 
-        choice = input("Type an option from above: ")
+        choice = input("Type an option(1-5) from above: ")
 
         if choice not in ["1", "2", "3", "4"]:
             print("Error: Invalid choice.")
