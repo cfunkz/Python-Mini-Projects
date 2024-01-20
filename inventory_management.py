@@ -1,9 +1,14 @@
+import uuid
+
 items = {}
 
 
 def add_item(name, barcode, quantity):
     # IF item name not in items, or barcode not in item values
-    if name not in items and barcode not in {item["barcode"] for item in items.values()}:
+    if int(barcode) == 0:
+        code = uuid.uuid4()
+        barcode = str(code)[:5]
+    if name not in items and barcode not in [item["barcode"] for item in items.values()]:
         items[name] = {
             "barcode": barcode,
             "quantity": int(quantity)
@@ -34,7 +39,6 @@ def remove_item(input_value, quantity):
 
 
 def find_item(input_value):
-    found = False
     for name, barcode in items.items():
         if input_value in [name, barcode["barcode"]]:
             print(f"Item found: {name} | {barcode}")
