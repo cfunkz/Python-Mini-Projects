@@ -4,7 +4,7 @@
 
 ### Description
 
-This Python script (`py_qrcode.py`) generates QR codes using the `qrcode` library. The script prompts the user to input a website or code, generates a QR code for the input, and saves the QR code as an image file. Each generated QR code is uniquely named using a **UUID** to avoid overwriting existing files.
+This Python script generates QR codes using the `qrcode` library. The script prompts the user to input a website or code, generates a QR code for the input, and saves the QR code as an image file. Each generated QR code is uniquely named using a **UUID** to avoid overwriting existing files.
 
 ### Usage
 
