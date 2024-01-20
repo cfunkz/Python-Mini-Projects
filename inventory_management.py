@@ -1,0 +1,81 @@
+items = {}
+
+
+def add_item(name, barcode, quantity):
+    # IF item name not in items, or barcode not in item values
+    if name not in items and barcode not in {item["barcode"] for item in items.values()}:
+        items[name] = {
+            "barcode": barcode,
+            "quantity": int(quantity)
+        }
+        print("Item added successfully.")
+    else:
+        print("Item exists. Try updating or removing.")
+
+
+def update_item(name, barcode, quantity):
+    if name and barcode in items:
+        items[name]["quantity"] += quantity
+
+
+def remove_item(input_value, quantity):
+    if input_value in items:
+        current_quantity = items[input_value]["quantity"]
+        if quantity >= current_quantity:
+            items.pop(input_value)
+            print(f"Successfully deleted ({input_value}) from stock.")
+        else:
+            items[input_value]["quantity"] -= quantity
+            print(
+                f"Successfully removed {quantity} units of {input_value}. Current stock: {items[input_value]['quantity']}")
+    else:
+        print(f"Item not found in inventory.")
+
+
+def find_item(input_value):
+    found = False
+    for name, barcode in items.items():
+        if input_value in [name, barcode["barcode"]]:
+            print(f"Item found: {name} | {barcode}")
+        else:
+            print(f"Item not found in inventory.")
+
+
+def main():
+    while True:
+        print("""
+              1. Add Item
+              2. Update
+              3. Remove Item
+              4. Find Item
+              5. Exit
+              """)
+
+        choice = input("Type an option from above: ")
+
+        if choice not in ['1', '2', '3', '4', '5']:
+            print("Error: Invalid choice.")
+        else:
+            choice = int(choice)
+            if choice == 1:
+                name = input("Name: ")
+                barcode = input("Barcode: ")
+                quantity = input("Quantity: ")
+                add_item(name, barcode, quantity)
+            elif choice == 2:
+                name = input("Name: ")
+                barcode = input("Barcode: ")
+                quantity = input("Quantity: ")
+                update_item(name, barcode, quantity)
+            elif choice == 3:
+                input_value = input("Enter name or barcode: ")
+                amount = int(input("Amount to remove: "))
+                remove_item(input_value, amount)
+            elif choice == 4:
+                input_value = input("Enter name or barcode: ")
+                find_item(input_value)
+            else:
+                break
+
+
+main()
