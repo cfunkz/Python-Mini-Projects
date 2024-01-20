@@ -50,6 +50,9 @@ def update_item(input_value, quantity):
             items[name]["quantity"] += int(quantity)
             save_json('inventory.json')
             print(f"Quantity updated successfully. Current stock for {name}: {items[name]['quantity']}")
+            if items[name]["quantity"] <= 0:
+                del items[name]
+                save_json('inventory.json')
             break
         else:
             print("Item not found in inventory.")
