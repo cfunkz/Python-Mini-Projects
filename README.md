@@ -32,11 +32,11 @@ This script uses the **requests** library to fetch current weather information f
 
 ### Information Displayed
 
--Current condition (e.g., Overcast)
--Temperature (e.g., -2°C)
--Wind speed and direction (e.g., 6 km/h ←)
--Visibility (e.g., 10 km)
--Precipitation (e.g., 0.0 mm)
+- Current condition (e.g., Overcast)
+- Temperature (e.g., -2°C)
+- Wind speed and direction (e.g., 6 km/h ←)
+- Visibility (e.g., 10 km)
+- Precipitation (e.g., 0.0 mm)
 
 ### Requirements
 
