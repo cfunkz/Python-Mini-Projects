@@ -14,6 +14,5 @@ def get_weather(city):
         print(f"Error", e)
 
 
-# Example: Get weather for New York
 data = input("Please enter location: ")
 get_weather(data)
