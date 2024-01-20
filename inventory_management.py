@@ -4,10 +4,10 @@ items = {}
 
 
 def add_item(name, barcode, quantity):
-    # IF item name not in items, or barcode not in item values
     if int(barcode) == 0:
         code = uuid.uuid4()
         barcode = str(code)[:5]
+    # IF item name not in items, or barcode not in item values
     if name not in items and barcode not in [item["barcode"] for item in items.values()]:
         items[name] = {
             "barcode": barcode,
