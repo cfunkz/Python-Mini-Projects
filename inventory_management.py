@@ -13,9 +13,14 @@ def add_item(name, barcode, quantity):
         print("Item exists. Try updating or removing.")
 
 
-def update_item(name, barcode, quantity):
-    if name and barcode in items:
-        items[name]["quantity"] += quantity
+def update_item(input_value, quantity):
+    for name, barcode in items.items():
+        if input_value in [name, barcode["barcode"]]:
+            items[name]["quantity"] += int(quantity)
+            print(f"Quantity updated successfully. Current stock for {name}: {items[name]['quantity']}")
+            break
+    else:
+        print("Item not found in inventory.")
 
 
 def remove_item(input_value, quantity):
@@ -63,10 +68,9 @@ def main():
                 quantity = input("Quantity: ")
                 add_item(name, barcode, quantity)
             elif choice == 2:
-                name = input("Name: ")
-                barcode = input("Barcode: ")
+                input_value = input("Enter name or barcode: ")
                 quantity = input("Quantity: ")
-                update_item(name, barcode, quantity)
+                update_item(input_value, quantity)
             elif choice == 3:
                 input_value = input("Enter name or barcode: ")
                 amount = int(input("Amount to remove: "))
