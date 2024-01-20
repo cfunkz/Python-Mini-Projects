@@ -24,17 +24,13 @@ def update_item(input_value, quantity):
 
 
 def remove_item(input_value, quantity):
-    if input_value in items:
-        current_quantity = items[input_value]["quantity"]
-        if quantity >= current_quantity:
-            items.pop(input_value)
-            print(f"Successfully deleted ({input_value}) from stock.")
-        else:
-            items[input_value]["quantity"] -= quantity
-            print(
-                f"Successfully removed {quantity} units of {input_value}. Current stock: {items[input_value]['quantity']}")
+    for name, barcode in items.items():
+        if input_value in [name, barcode["barcode"]]:
+            items[name]["quantity"] -= int(quantity)
+            print(f"Quantity updated successfully. Current stock for {name}: {items[name]['quantity']}")
+            break
     else:
-        print(f"Item not found in inventory.")
+        print("Item not found in inventory.")
 
 
 def find_item(input_value):
