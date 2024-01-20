@@ -34,4 +34,4 @@ try:
     data = input("Enter a website or code: ")
     generate_qr(data)
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print(f"Error: {e}")
