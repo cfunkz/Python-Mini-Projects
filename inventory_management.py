@@ -49,10 +49,10 @@ def update_item(input_value, quantity):
         if input_value in [name, details["barcode"]]:
             items[name]["quantity"] += int(quantity)
             save_json('inventory.json')
-            print(f"Quantity updated successfully. Current stock for {name}: {items[name]['quantity']}")
             if items[name]["quantity"] <= 0:
                 del items[name]
                 save_json('inventory.json')
+            print(f"Quantity updated successfully. Current stock for {name}: {items[name]['quantity']}")
             break
         else:
             print("Item not found in inventory.")
@@ -72,7 +72,7 @@ def view_items():
     for name, details in items.items():
         barcode = details["barcode"]
         quantity = details["quantity"]
-        print(f"{name} | {barcode} | {quantity} \n")
+        print(f"{name} | {barcode} | {quantity}")
 
 
 def main():
