@@ -57,7 +57,7 @@ A basic inventory management system coded in Python. The script allows users to 
 
 ### Usage
 
-1.Create inventory.json file
+1. Create inventory.json file
 2. Run the script.
 3. Select an option from the displayed options.
 
