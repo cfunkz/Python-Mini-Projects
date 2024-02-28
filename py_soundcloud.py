@@ -14,7 +14,7 @@ def get_playlist():
                     track.write_mp3_to(file)
             except Exception as e:
                 print("Track error:", e)
-                continue
+                return 0
     except Exception as e:
         print("Link error: ", e)
         print("Exiting...")
