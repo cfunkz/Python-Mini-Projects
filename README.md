@@ -67,3 +67,24 @@ A basic inventory management system coded in Python. The script allows users to 
 - [uuid](https://docs.python.org/3/library/uuid.html)
 
 Or install using ```pip install uuid```
+
+## Soundcloud downloader py_soundcloud.py [Link](https://github.com/cfunkz/Python-Mini-Projects/blob/main/py_soundcloud.py)
+
+### Description
+
+A soundcloud song/playlist downloader made with soundcloud-lib module.
+
+### Features
+
+- **Track Download**
+- **Playlist Download**
+
+### Usage
+
+1. Run py_soundcloud.py
+2. Select what you wish to download
+3. Files will save at the same loaction it has ran from.
+
+### Dependencies
+
+- [soundcloud-lib](https://pypi.org/project/soundcloud-lib/) ```pip install soundcloud-lib```
